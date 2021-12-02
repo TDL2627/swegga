@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Kannemeyer</title>
+    <link rel="stylesheet" href="/resource/styling.css">
+</head>
+<body>
+    <div id="sidebar">
+        <img id="sidepic" src="/resource/swegga.jpg" alt="">
+    </div>
+    <div id="sextion">
+
+    
+    <div id="banner">
+<img src="/resource/delivery.gif" alt="">
+    </div>
+    <div id="navigation">
+        <img id="navi-pic" src="/resource/links.gif" alt="">
+    </div>
+   
+ 
+   <div id="page">
+       <form>
+           <div id="tabli">
+            <table border="2">
+                <tr>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                     <th>Price</th>
+                       <th>Quantity</th>
+                       <th style="width: 150px;">Total</th>
+                 </tr>
+                 <tr>
+                     <td><a href="">Female Ski Jackets</a></td>
+                     <td><select name="size" id="size">
+                         <option value="small">Small</option>
+                         <option value="medium">Medium</option>
+                         <option value="large">Large</option>
+                     </select></td>
+                     <td>
+                         <select name="colors" id="colors">
+                             <option value="red">Red</option>
+                             <option value="blue">Blue</option>
+                             <option value="green">Green</option>
+                         </select>
+                     </td>
+                     <td>
+                         150.95
+                     </td>
+                     <td>
+                         <input type="number"  oninput="female(this.value)" onchange="female(this.value)">
+                     </td>
+                       <td>
+                           <div id="totalF"></div>
+                       </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <a href="">Male Ski Jackets</a>
+                     </td>
+                     <td>
+                         <select name="size" id="size">
+                             <option value="small">Small</option>
+                             <option value="medium">Medium</option>
+                             <option value="large">Large</option>
+                         </select>
+                     </td>
+                     <td>
+                         <select name="colors" id="colors">
+                             <option value="red">Red</option>
+                             <option value="blue">Blue</option>
+                             <option value="green">Green</option>
+                         </select>
+                     </td>
+                     <td>
+                       180.95  
+                     </td>
+                     <td>
+                         <input type="number" oninput="male(this.value)" onchange="male(this.value)">
+                     </td>
+                     <td>
+                      <div id="totalM"></div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td colspan="4">Click to confirm your order</td>
+                     <td><button type="button" onclick="totality()">total price</button></td>
+                     <td><div id="final" ></div></td>
+                 </tr>
+   
+ 
+            </table>
+           </div>
+          
+
+       </form>
+   </div>
+   
+</div>
+<hr>
+<footer>'© 2020 Swegga Fashion – Ashley Kannemeyer</footer>
+
+<script src="/coffee.js"></script>
+</body>
+</html>
